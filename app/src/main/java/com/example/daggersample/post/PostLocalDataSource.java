@@ -14,8 +14,12 @@ public class PostLocalDataSource implements PostDataSource {
         return INSTANCE;
     }
 
+    private void buildList() {
+
+    }
+
     @Override
-    public void getPosts() {
+    public void getPosts(CallBack callBack) {
 
     }
 }

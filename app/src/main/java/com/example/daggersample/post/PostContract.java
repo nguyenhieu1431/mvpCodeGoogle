@@ -1,5 +1,7 @@
 package com.example.daggersample.post;
 
+import java.util.List;
+
 /**
  * Created by Admin on 03/02/17.
  */
@@ -10,7 +12,7 @@ public interface PostContract {
 
         void hideProgress();
 
-        void showPosts();
+        void showPosts(List<Post> posts);
 
         void noPost();
 
@@ -18,6 +20,7 @@ public interface PostContract {
     }
 
     interface Presenter {
-        void loadPosts();
+        void loadPosts(boolean forceUpdate);
+        void onStart();
     }
 }

@@ -15,7 +15,7 @@ public class PostRemoteDataSource implements PostDataSource {
     }
 
     @Override
-    public void getPosts() {
+    public void getPosts(CallBack callBack) {
 
     }
 }
